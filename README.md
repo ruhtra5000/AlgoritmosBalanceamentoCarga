@@ -1,8 +1,8 @@
 # Análise de desempenho de algoritmos de balanceamento de carga em servidores heterogêneos
 
-O projeto metrifica o desempenho de algoritmos de balanceamento de carga utilizando o NGINX e o Docker, mensurando: vazão (requisições/s), latência média, P50, P95. P99, uso médio de CPU, uso médio de memória, e distribuição das requisições.
+O projeto metrifica o desempenho de algoritmos de balanceamento de carga, utilizando o NGINX e o Docker, mensurando: vazão (requisições/s), latência média, P50, P95, P99, uso médio de CPU, uso médio de memória, e distribuição das requisições.
 
-**Lembrando que, devido a limitações do NGINX e do Docker: o projeto tem garantia de funcionamento SOMENTE no Windows!**
+<ins>Lembrando que, devido a limitações do NGINX e do Docker: o projeto tem garantia de funcionamento SOMENTE no Windows!</ins>
 
 ## Algoritmos analisados
 - Round Robin
