@@ -1,0 +1,50 @@
+services:
+
+  servidor1:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-1
+      TEMPO_MIN: 0.3
+      TEMPO_MAX: 0.6
+
+  servidor2:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-2
+      TEMPO_MIN: 0.6
+      TEMPO_MAX: 1.0
+
+  servidor3:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-3
+      TEMPO_MIN: 0.1
+      TEMPO_MAX: 0.3
+
+  servidor4:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-4
+      TEMPO_MIN: 0.3
+      TEMPO_MAX: 0.6
+
+  servidor5:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-5
+      TEMPO_MIN: 0.6
+      TEMPO_MAX: 1.0
+
+  servidor6:
+    build: .
+    environment:
+      NOME_SERVIDOR: Servidor-6
+      TEMPO_MIN: 0.1
+      TEMPO_MAX: 0.3
+
+  nginx:
+    image: nginx:1.30.4
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf:ro
